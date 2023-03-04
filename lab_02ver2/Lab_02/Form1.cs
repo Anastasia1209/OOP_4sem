@@ -12,7 +12,7 @@ namespace Lab_02
             InitializeComponent();
         }
 
-        public List<Discipline> listOfDisc = new List<Discipline>();
+        //public List<Discipline> listOfDisc = new List<Discipline>();
         Discipline discipline;   /// в этот объект пишем всю инфу из формы
         string path = @"D:\Универ\4сем\OOP_4sem\Lab_02\Lab_02\text.xml";
         /// путь по которому будем записывать в xml-файл объект
@@ -37,11 +37,11 @@ namespace Lab_02
         private bool ValidateForm()     // метод проверки объектов формы, проверяет все тексбоксы и другие на заполненность
         {
             bool OKtoSave = true;
-            List<TextBox> textBoxes = new List<TextBox> { textBox1, textBox2, textBox3, textBox6, textBox4 };
+            List<TextBox> textBoxes = new List<TextBox> { textBox1, textBox2, textBox3};
             List<ComboBox> comboBoxes = new List<ComboBox> { comboBox1 };
             List<CheckedListBox> checkedListBoxes = new List<CheckedListBox> { checkedListBox1, checkedListBox2, };
 
-            foreach (TextBox temp in textBoxes)
+            /*foreach (TextBox temp in textBoxes)
             {
                 if (temp.Text == "")
                 {
@@ -52,14 +52,38 @@ namespace Lab_02
                 {
                     temp.BackColor = Color.White;
                 }
-            }
+            }*/
+
+            string str0 = "1234567890";
             string str = "+/*><=";
-            string str1 = textBox1.Text;
-            string str2 = textBox2.Text;
-            string str3 = textBox3.Text;
-            string str4 = textBox4.Text;
-            string str6 = textBox6.Text;
-            for (int i = 0; i < str1.Length; i++)
+
+            foreach(var temp in textBoxes)
+            {
+                if(temp.Text.Any(symb => str.Contains(symb)))
+                {
+                    temp.BackColor = Color.LightCoral;
+                    OKtoSave = false;
+                    throw new Exception("В строке недопустимые символы");
+                }
+                else
+                {
+                    temp.BackColor = Color.White;
+                }
+            }
+
+            if(textBox1.Text.Any(symb => str0.Contains(symb)))
+            {
+                OKtoSave = false;
+                this.textBox1.BackColor = Color.LightCoral;
+                throw new Exception("В строке есть цифры");
+            } 
+            else
+            {
+                this.textBox1.BackColor = Color.White;
+            }
+
+            
+            /*for (int i = 0; i < str1.Length; i++)
                 for (int j = 0; j < str.Length; j++)
                     if (str1[i] == str[j])
                     {
@@ -70,7 +94,6 @@ namespace Lab_02
                     {
                         this.textBox1.BackColor = Color.White;
                     }
-            string str0 = "1234567890";
             for (int i = 0; i < str1.Length; i++)
                 for (int j = 0; j < str1.Length; j++)
                     if (str1[i] == str0[j])
@@ -130,7 +153,7 @@ namespace Lab_02
                     else
                     {
                         this.textBox6.BackColor = Color.White;
-                    }
+                    }*/
 
             int num;
             if (!Int32.TryParse(textBox2.Text, out num) || num < 1 || num > 27)
@@ -187,7 +210,7 @@ namespace Lab_02
             {
                 List<string> tempCourse = new List<string>();
                 List<string> tempSpec = new List<string>();
-                Lector tempLect = new Lector((string)listBox1.SelectedItem, textBox4.Text, textBox6.Text);
+                Lector tempLect = Form2.lect;
                 string tempRadio = "";
 
                 foreach (string item in checkedListBox1.CheckedItems)
@@ -203,7 +226,7 @@ namespace Lab_02
                 discipline = new Discipline(textBox1.Text, Int32.Parse(comboBox1.Text),
                     tempCourse, tempSpec, Int32.Parse(textBox2.Text), Int32.Parse(textBox3.Text),
                     tempRadio, tempLect);
-                listOfDisc.Add(discipline);
+                //listOfDisc.Add(discipline);
 
 
                 /// код для сериализации в XML
@@ -231,9 +254,7 @@ namespace Lab_02
                 disOut = (Discipline)formatter.Deserialize(fs);
             }
 
-
-            foreach (Discipline disc in listOfDisc)
-                richTextBox1.Text += disOut.ToString();
+            richTextBox1.Text = disOut.ToString();
 
         }
         private void textBox7_TextChanged(object sender, EventArgs e) { }
@@ -245,8 +266,8 @@ namespace Lab_02
 
         private void button3_Click(object sender, EventArgs e)
         {
-            textBox1.Text = "";
-            comboBox1.Text = "";
+            textBox1.Text = string.Empty;
+            comboBox1.Text = string.Empty;
             foreach (int i in checkedListBox1.CheckedIndices)
             {
                 checkedListBox1.SetItemCheckState(i, CheckState.Unchecked);
@@ -255,18 +276,21 @@ namespace Lab_02
             {
                 checkedListBox2.SetItemCheckState(i, CheckState.Unchecked);
             }
-            textBox2.Text = "";
-            textBox3.Text = "";
+            textBox2.Text = string.Empty;
+            textBox3.Text = string.Empty;
             radioButton1.Checked = false;
             radioButton2.Checked = false;
-            textBox6.Text = "";
-            textBox4.Text = "";
-            listBox1.ClearSelected();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
             richTextBox1.Text = "";
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Form2 lector = new Form2();
+            lector.ShowDialog();
         }
     }
 }

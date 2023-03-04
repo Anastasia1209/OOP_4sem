@@ -1,0 +1,52 @@
+D:\Универ\4сем\OOP_4sem\Lab_02\Lab_02\bin\Debug\net6.0-windows\Lab_02.exe
+D:\Универ\4сем\OOP_4sem\Lab_02\Lab_02\bin\Debug\net6.0-windows\Lab_02.deps.json
+D:\Универ\4сем\OOP_4sem\Lab_02\Lab_02\bin\Debug\net6.0-windows\Lab_02.runtimeconfig.json
+D:\Универ\4сем\OOP_4sem\Lab_02\Lab_02\bin\Debug\net6.0-windows\Lab_02.dll
+D:\Универ\4сем\OOP_4sem\Lab_02\Lab_02\bin\Debug\net6.0-windows\Lab_02.pdb
+D:\Универ\4сем\OOP_4sem\Lab_02\Lab_02\obj\Debug\net6.0-windows\Lab_02.csproj.AssemblyReference.cache
+D:\Универ\4сем\OOP_4sem\Lab_02\Lab_02\obj\Debug\net6.0-windows\Lab_02.Form1.resources
+D:\Универ\4сем\OOP_4sem\Lab_02\Lab_02\obj\Debug\net6.0-windows\Lab_02.csproj.GenerateResource.cache
+D:\Универ\4сем\OOP_4sem\Lab_02\Lab_02\obj\Debug\net6.0-windows\Lab_02.GeneratedMSBuildEditorConfig.editorconfig
+D:\Универ\4сем\OOP_4sem\Lab_02\Lab_02\obj\Debug\net6.0-windows\Lab_02.AssemblyInfoInputs.cache
+D:\Универ\4сем\OOP_4sem\Lab_02\Lab_02\obj\Debug\net6.0-windows\Lab_02.AssemblyInfo.cs
+D:\Универ\4сем\OOP_4sem\Lab_02\Lab_02\obj\Debug\net6.0-windows\Lab_02.csproj.CoreCompileInputs.cache
+D:\Универ\4сем\OOP_4sem\Lab_02\Lab_02\obj\Debug\net6.0-windows\Lab_02.dll
+D:\Универ\4сем\OOP_4sem\Lab_02\Lab_02\obj\Debug\net6.0-windows\refint\Lab_02.dll
+D:\Универ\4сем\OOP_4sem\Lab_02\Lab_02\obj\Debug\net6.0-windows\Lab_02.pdb
+D:\Универ\4сем\OOP_4sem\Lab_02\Lab_02\obj\Debug\net6.0-windows\Lab_02.genruntimeconfig.cache
+D:\Универ\4сем\OOP_4sem\Lab_02\Lab_02\obj\Debug\net6.0-windows\ref\Lab_02.dll
+F:\Прога\2 курс\Lab_02\Lab_02\bin\Debug\net6.0-windows\Lab_02.exe
+F:\Прога\2 курс\Lab_02\Lab_02\bin\Debug\net6.0-windows\Lab_02.deps.json
+F:\Прога\2 курс\Lab_02\Lab_02\bin\Debug\net6.0-windows\Lab_02.runtimeconfig.json
+F:\Прога\2 курс\Lab_02\Lab_02\bin\Debug\net6.0-windows\Lab_02.dll
+F:\Прога\2 курс\Lab_02\Lab_02\bin\Debug\net6.0-windows\Lab_02.pdb
+F:\Прога\2 курс\Lab_02\Lab_02\obj\Debug\net6.0-windows\Lab_02.csproj.AssemblyReference.cache
+F:\Прога\2 курс\Lab_02\Lab_02\obj\Debug\net6.0-windows\Lab_02.Form1.resources
+F:\Прога\2 курс\Lab_02\Lab_02\obj\Debug\net6.0-windows\Lab_02.csproj.GenerateResource.cache
+F:\Прога\2 курс\Lab_02\Lab_02\obj\Debug\net6.0-windows\Lab_02.GeneratedMSBuildEditorConfig.editorconfig
+F:\Прога\2 курс\Lab_02\Lab_02\obj\Debug\net6.0-windows\Lab_02.AssemblyInfoInputs.cache
+F:\Прога\2 курс\Lab_02\Lab_02\obj\Debug\net6.0-windows\Lab_02.AssemblyInfo.cs
+F:\Прога\2 курс\Lab_02\Lab_02\obj\Debug\net6.0-windows\Lab_02.csproj.CoreCompileInputs.cache
+F:\Прога\2 курс\Lab_02\Lab_02\obj\Debug\net6.0-windows\Lab_02.dll
+F:\Прога\2 курс\Lab_02\Lab_02\obj\Debug\net6.0-windows\refint\Lab_02.dll
+F:\Прога\2 курс\Lab_02\Lab_02\obj\Debug\net6.0-windows\Lab_02.pdb
+F:\Прога\2 курс\Lab_02\Lab_02\obj\Debug\net6.0-windows\Lab_02.genruntimeconfig.cache
+F:\Прога\2 курс\Lab_02\Lab_02\obj\Debug\net6.0-windows\ref\Lab_02.dll
+D:\Универ\4сем\OOP_4sem\lab_02ver2\Lab_02\bin\Debug\net6.0-windows\Lab_02.exe
+D:\Универ\4сем\OOP_4sem\lab_02ver2\Lab_02\bin\Debug\net6.0-windows\Lab_02.deps.json
+D:\Универ\4сем\OOP_4sem\lab_02ver2\Lab_02\bin\Debug\net6.0-windows\Lab_02.runtimeconfig.json
+D:\Универ\4сем\OOP_4sem\lab_02ver2\Lab_02\bin\Debug\net6.0-windows\Lab_02.dll
+D:\Универ\4сем\OOP_4sem\lab_02ver2\Lab_02\bin\Debug\net6.0-windows\Lab_02.pdb
+D:\Универ\4сем\OOP_4sem\lab_02ver2\Lab_02\obj\Debug\net6.0-windows\Lab_02.csproj.AssemblyReference.cache
+D:\Универ\4сем\OOP_4sem\lab_02ver2\Lab_02\obj\Debug\net6.0-windows\Lab_02.Form1.resources
+D:\Универ\4сем\OOP_4sem\lab_02ver2\Lab_02\obj\Debug\net6.0-windows\Lab_02.Form2.resources
+D:\Универ\4сем\OOP_4sem\lab_02ver2\Lab_02\obj\Debug\net6.0-windows\Lab_02.csproj.GenerateResource.cache
+D:\Универ\4сем\OOP_4sem\lab_02ver2\Lab_02\obj\Debug\net6.0-windows\Lab_02.GeneratedMSBuildEditorConfig.editorconfig
+D:\Универ\4сем\OOP_4sem\lab_02ver2\Lab_02\obj\Debug\net6.0-windows\Lab_02.AssemblyInfoInputs.cache
+D:\Универ\4сем\OOP_4sem\lab_02ver2\Lab_02\obj\Debug\net6.0-windows\Lab_02.AssemblyInfo.cs
+D:\Универ\4сем\OOP_4sem\lab_02ver2\Lab_02\obj\Debug\net6.0-windows\Lab_02.csproj.CoreCompileInputs.cache
+D:\Универ\4сем\OOP_4sem\lab_02ver2\Lab_02\obj\Debug\net6.0-windows\Lab_02.dll
+D:\Универ\4сем\OOP_4sem\lab_02ver2\Lab_02\obj\Debug\net6.0-windows\refint\Lab_02.dll
+D:\Универ\4сем\OOP_4sem\lab_02ver2\Lab_02\obj\Debug\net6.0-windows\Lab_02.pdb
+D:\Универ\4сем\OOP_4sem\lab_02ver2\Lab_02\obj\Debug\net6.0-windows\Lab_02.genruntimeconfig.cache
+D:\Универ\4сем\OOP_4sem\lab_02ver2\Lab_02\obj\Debug\net6.0-windows\ref\Lab_02.dll
