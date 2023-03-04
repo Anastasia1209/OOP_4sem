@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfDiscipline xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Discipline>
+		<Name>Аисд</Name>
+		<Semester>2</Semester>
+		<Course>
+			<string>2 </string>
+		</Course>
+		<Speciality>
+			<string>ПОИТ </string>
+		</Speciality>
+		<NumOfLectures>11</NumOfLectures>
+		<NumOfLabs>11</NumOfLabs>
+		<TypeOfControl>экзамен</TypeOfControl>
+		<lector>
+			<Department>Физики</Department>
+			<Name>Шиман</Name>
+			<Auditorium>132</Auditorium>
+		</lector>
+	</Discipline>
+	<Discipline>
+		<Name>Аисд</Name>
+		<Semester>2</Semester>
+		<Course>
+			<string>2 </string>
+		</Course>
+		<Speciality>
+			<string>ПОИТ </string>
+		</Speciality>
+		<NumOfLectures>11</NumOfLectures>
+		<NumOfLabs>11</NumOfLabs>
+		<TypeOfControl>экзамен</TypeOfControl>
+		<lector>
+			<Department>Физики</Department>
+			<Name>Шиман</Name>
+			<Auditorium>132</Auditorium>
+		</lector>
+	</Discipline>
+</ArrayOfDiscipline>
