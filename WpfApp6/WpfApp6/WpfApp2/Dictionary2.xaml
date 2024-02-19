@@ -1,0 +1,28 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:system="clr-namespace:System;assembly=System.Runtime">
+    <system:String x:Key="Shop">Магазин</system:String>
+    <system:String x:Key="Redactor">Редактор</system:String>
+    <system:String x:Key="FIO">ФИО</system:String>
+    <system:String x:Key="Experience">Стаж</system:String>
+    <system:String x:Key="StyleWork">Стиль</system:String>
+    <system:String x:Key="Description">Описание</system:String>
+    <system:String x:Key="Type">Тип</system:String>
+    <system:String x:Key="Image">Картинка</system:String>
+    <system:String x:Key="Filter">Фильтр</system:String>
+    <system:String x:Key="Search">Поиск</system:String>
+    <system:String x:Key="Smartphone">Телефон</system:String>
+    <system:String x:Key="Tablet">Планшет</system:String>
+    <system:String x:Key="Laptop">Ноутбук</system:String>
+    <system:String x:Key="ImageUrl">Путь к картинке</system:String>
+    <system:String x:Key="Add">Добавить</system:String>
+    <system:String x:Key="Delete">Удалить</system:String>
+    <system:String x:Key="Change">Изменить</system:String>
+    <system:String x:Key="Load">Загрузить</system:String>
+    <system:String x:Key="Save">Сохранить</system:String>
+    <system:String x:Key="Others">Другое</system:String>
+    <system:String x:Key="lab8">лаба8</system:String>
+    <system:String x:Key="Undo">Назад</system:String>
+    <system:String x:Key="Redo">Вперёд</system:String>
+    <system:String x:Key="SortStyle">По стилю</system:String>
+    <system:String x:Key="SortExp">По стилю</system:String>
+</ResourceDictionary>

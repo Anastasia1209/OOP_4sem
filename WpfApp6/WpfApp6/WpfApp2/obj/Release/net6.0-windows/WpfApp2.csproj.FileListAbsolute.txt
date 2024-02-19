@@ -1,0 +1,7 @@
+D:\4sem\ООП\WpfApp2\WpfApp2\obj\Release\net6.0-windows\WpfApp2.csproj.AssemblyReference.cache
+D:\4sem\ООП\WpfApp2\WpfApp2\obj\Release\net6.0-windows\Dictionary1.baml
+D:\4sem\ООП\WpfApp2\WpfApp2\obj\Release\net6.0-windows\Dictionary2.baml
+D:\4sem\ООП\WpfApp2\WpfApp2\obj\Release\net6.0-windows\MainWindow.g.cs
+D:\4sem\ООП\WpfApp2\WpfApp2\obj\Release\net6.0-windows\App.g.cs
+D:\4sem\ООП\WpfApp2\WpfApp2\obj\Release\net6.0-windows\WpfApp2_MarkupCompile.cache
+D:\4sem\ООП\WpfApp2\WpfApp2\obj\Release\net6.0-windows\WpfApp2_MarkupCompile.lref

@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <RootNamespace>Laba6_7</RootNamespace>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Products\Animals\**" />
+    <EmbeddedResource Remove="Products\Animals\**" />
+    <None Remove="Products\Animals\**" />
+    <Page Remove="Products\Animals\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Komon.Presentation.Core" Version="1.0.1.38" />
+    <PackageReference Include="Newtonsoft.Json" Version="9.0.1" />
+    <PackageReference Include="PresentationFramework" Version="4.6.0" />
+    <PackageReference Include="PresentationFramework.Aero2" Version="1.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\WpfCustomControlLibrary1\WpfCustomControlLibrary1.csproj" />
+  </ItemGroup>
+
+</Project>

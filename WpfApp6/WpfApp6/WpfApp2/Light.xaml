@@ -1,0 +1,15 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Style TargetType="Grid">
+        <Setter Property="Background" Value="#d3cadb"/>
+    </Style>
+    <Style TargetType="TextBlock">
+        <Setter Property="Foreground" Value="Black"/>
+    </Style>
+    <Style TargetType="ListBoxItem">
+        <Setter Property="Background" Value="#ece9f0"/>
+    </Style>
+    <Style TargetType="TabItem">
+        <Setter Property="Background" Value="White"/>
+    </Style>
+</ResourceDictionary>

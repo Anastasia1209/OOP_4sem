@@ -1,0 +1,155 @@
+﻿<Window x:Class="WpfApp2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:MyNamespace="clr-namespace:WpfCustomControlLibrary1;assembly=WpfCustomControlLibrary1"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="550" Width="800">
+    <Window.Resources>
+
+    </Window.Resources>
+    <Window.CommandBindings>
+        <CommandBinding Command="local:WindowCommands.Search" Executed="Search_Executed"/>
+        <CommandBinding Command="local:WindowCommands.Add" Executed="Add_Executed"/>
+        <CommandBinding Command="local:WindowCommands.Delete" Executed="Delete_Executed"/>
+        <CommandBinding Command="local:WindowCommands.Change" Executed="Change_Executed"/>
+        <CommandBinding Command="local:WindowCommands.Save" Executed="Save_Executed"/>
+    </Window.CommandBindings>
+    <Grid ShowGridLines="True">
+
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition MinWidth="200"></ColumnDefinition>
+            <ColumnDefinition MinWidth="200"></ColumnDefinition>
+            <ColumnDefinition MinWidth="200"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Column="0">
+
+            <TabControl>
+                <TabItem Header="{StaticResource Shop}">
+                    <Grid Grid.Column="0" >
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="1.9*" />
+                            <RowDefinition Height="0.3*" />
+                        </Grid.RowDefinitions>
+                        <StackPanel  Grid.Row="0"
+                                        Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Top"
+                                        MinWidth="250" MinHeight="200" >
+                            <TextBlock Text="{DynamicResource Filter}" HorizontalAlignment="Center" FontSize="20" FontWeight="Bold" FontFamily="Arial" Margin="0,50,0,10"></TextBlock>
+                            <TextBlock Text="{DynamicResource SortStyle}" FontSize="16" Margin="10,0,10,0"></TextBlock>
+                            <ComboBox x:Name="styleComboBox" Margin="10,0,10,0">
+                            </ComboBox>
+                            <TextBlock Text="{DynamicResource SortExp}" FontSize="16" Margin="10,0,10,0"></TextBlock>
+                            <Slider x:Name="SliderEx" />
+
+                        </StackPanel>
+                        <Button Grid.Row="1" Content="{DynamicResource Search}" Style="{StaticResource BlackButton}" FontSize="20" Background="White" Command="local:WindowCommands.Search" x:Name="Search"></Button>
+                    </Grid>
+
+                </TabItem>
+                <TabItem Header="{DynamicResource Redactor}">
+                    <Grid Grid.Column="0">
+                      
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="1.9*" />
+                            <RowDefinition Height="0.3*" />
+                            <RowDefinition Height="0.1*"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <StackPanel  Grid.Row="0"
+                                        Orientation="Vertical" HorizontalAlignment="Left" VerticalAlignment="Top"
+                                        MinWidth="250" MinHeight="200" Grid.ColumnSpan="2" >
+
+                            <TextBlock Text="{DynamicResource FIO}"  FontSize="16" Margin="10,0,10,0"/>
+                            <TextBox Text="" x:Name="FIO"  MinWidth="250"  Margin="10,0,10,0"/>
+
+                            <TextBlock Text="{DynamicResource Experience}" FontSize="16"  Margin="10,0,10,0"/>
+                            <TextBox Text=""  x:Name="Experience" MinWidth="250"  Margin="10,0,10,0"/>
+
+                            <TextBlock Text="{DynamicResource StyleWork}"  FontSize="16"  Margin="10,0,10,0"/>
+                            <TextBox Text="" x:Name="Stylework" MinWidth="250"  Margin="10,0,10,0"/>
+
+                            <TextBlock Text="{DynamicResource ImageUrl}" FontSize="16"  Margin="10,0,10,0"/>
+                            <TextBox Text="" x:Name="ImageUrl" MinWidth="250"  Margin="10,0,10,0"/>
+
+                            <TextBlock Text="ID" FontSize="16"  Margin="10,0,10,0"/>
+                            <TextBox Text="" x:Name="ID" MinWidth="200"  Margin="10,0,10,0"/>
+
+
+                            <TextBlock Text="{DynamicResource Type}" FontSize="16"  Margin="10,0,10,0"/>
+                            <ComboBox x:Name="typeComboBox" Margin="10,0,10,0">
+                            </ComboBox>
+
+                            <TextBlock Text="{DynamicResource Description}"  FontSize="16"  Margin="10,0,10,0"/>
+                            <TextBox x:Name="Description" Text=""  MinWidth="250"  Margin="10,0,10,0"/>
+                        </StackPanel>
+
+                        <DockPanel LastChildFill="False" Grid.ColumnSpan="2" Margin="0,418,0,0" Grid.RowSpan="2" >
+                            <Button DockPanel.Dock="Top" Background="AliceBlue" Content="{DynamicResource Add}" Command="local:WindowCommands.Add"/>
+                            <Button DockPanel.Dock="Bottom" Background="AliceBlue" Content="{DynamicResource Save}" Command="local:WindowCommands.Save"/>
+                            <Button DockPanel.Dock="Left" Background="AliceBlue" Content="{DynamicResource Change}"  Command="local:WindowCommands.Change"/>
+                            <Button DockPanel.Dock="Left" Background="AliceBlue" Content="{DynamicResource Delete}"  Command="local:WindowCommands.Change"/>
+                            <Button DockPanel.Dock="Right" Background="AliceBlue" Content=" Вперед " Click="Redo_Click" />
+
+
+                            <Button DockPanel.Dock="Right" Background="AliceBlue" Content=" Назад "  Click="Undo_Click"/>
+                        </DockPanel>
+                        <DockPanel Grid.Row="1" Grid.ColumnSpan="2" Margin="0,66,0,0" Grid.RowSpan="2">
+                            <Button DockPanel.Dock="Left" Background="AliceBlue" Content="Англиский" Width="121" x:Name="EnglishButton" Click="LanguageButton_Click" />
+                            <Button DockPanel.Dock="Right" Content="Русский"  x:Name="RussianButton"  Click="LanguageButton_Click"/>
+                        </DockPanel>
+
+                    </Grid>
+                </TabItem>
+                <TabItem Header="Тема">
+
+                    <Grid x:Name="style">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="0.1*" />
+                            <RowDefinition Height="0.9*" />
+                        </Grid.RowDefinitions>
+                        <ComboBox Grid.Row="0" x:Name="styleBox">
+
+                        </ComboBox>
+                        <MyNamespace:CustomControl1 Grid.Row="1" />
+                    </Grid>
+                </TabItem>
+
+            </TabControl>
+        </Grid>
+        <Grid Background="Aqua" Grid.Column="1" Grid.ColumnSpan="2">
+
+            <ListBox x:Name="phonesList" SelectionChanged="phonesList_SelectionChanged">
+                <ListBox.ItemTemplate>
+                    <DataTemplate >
+                        <Border BorderBrush="Gainsboro" BorderThickness="2" CornerRadius="10">
+                            <StackPanel Orientation="Vertical" HorizontalAlignment="Center" Width="250" Height="300" MinWidth="200">
+                                <Image Width="200" Height="150" Source="{Binding Path=ImagePath}"  Margin="0,0,0,0"/>
+                                <StackPanel Margin="20,0,0,0">
+                                    <TextBlock FontSize="16" FontWeight="Bold" Text="{Binding Path=FIO}" Margin="0,5,0,5"/>
+                                    <StackPanel  Orientation="Horizontal">
+                                        <TextBlock FontSize="14" Text="Стаж: " HorizontalAlignment="Center"/>
+                                        <TextBlock FontSize="14" Text="{Binding Path=Experience}" HorizontalAlignment="Center" VerticalAlignment="Stretch"/>
+                                        <TextBlock FontSize="14" Text=" лет" HorizontalAlignment="Center"/>
+                                    </StackPanel>
+                                    <TextBlock FontSize="14" Text="{Binding Path=StyleWork}" />
+                                    <TextBlock FontSize="10" Text="{Binding Path=Description}" TextWrapping="Wrap" Margin="0,10,0,0"/>
+                                </StackPanel>
+                            </StackPanel>
+                        </Border>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+                <ListBox.ItemsPanel>
+                    <ItemsPanelTemplate>
+
+                        <UniformGrid Columns="2"/>
+
+                    </ItemsPanelTemplate>
+                </ListBox.ItemsPanel>
+            </ListBox>
+        </Grid>
+    </Grid>
+
+</Window>

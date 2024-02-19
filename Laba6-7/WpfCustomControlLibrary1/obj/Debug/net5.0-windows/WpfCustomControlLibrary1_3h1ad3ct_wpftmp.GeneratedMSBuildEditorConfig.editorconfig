@@ -1,0 +1,10 @@
+is_global = true
+build_property.TargetFramework = net5.0-windows
+build_property.TargetPlatformMinVersion = 7.0
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = WpfCustomControlLibrary1_3h1ad3ct_wpftmp
+build_property.ProjectDir = E:\1POIT\2\OOP\OOP-2semester-main\OOP-2semester-main\Laba6-7\WpfCustomControlLibrary1\
